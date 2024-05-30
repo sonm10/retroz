@@ -191,6 +191,20 @@
       a:hover {
         text-decoration: underline;
       }
+
+th {
+  background-color: #04AA6D;
+  color: white;
+} 
+ tr:nth-child(even) {background-color: #f2f2f2;} 
+  tr:hover {background-color: coral;} 
+   th, td {
+  border-bottom: 1px solid #ddd;
+}
+th, td {
+  padding: 15px;
+  text-align: left;
+}
     </style>
   </head>
   <body>
@@ -200,13 +214,14 @@
 
     <div class="container">
       <div class="hero">
-        <img src="bg.jpg" alt="Hero Image" />
+        <img src="/bg.jpg" alt="Hero Image" />
         <h1>OLD is Forever</h1>
         <p class="lead mt-3 mb-4">
           Revive the Past, Customize Your Future – RetroZ: Where Classic Meets
           Unique
         </p>
       </div>
+      <
       {% block body %}{% endblock %}
       
     <div class="footer">
