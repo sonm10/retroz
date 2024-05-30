@@ -24,42 +24,6 @@
         margin: 0 auto;
         padding: 20px;
       }
-
-      .hero {
-        background-color: #ffffff;
-        padding: 50px 20px;
-        text-align: center;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        margin-bottom: 20px;
-      }
-
-      .hero img {
-        max-width: 100%;
-        height: auto;
-        margin-bottom: 20px;
-        border-radius: 10px;
-      }
-
-      .hero h1 {
-        font-size: 3em;
-        margin-bottom: 10px;
-      }
-
-      .hero p {
-        font-size: 1.2em;
-        margin-bottom: 20px;
-      }
-
-      .hero a {
-        display: inline-block;
-        background-color: #4caf50;
-        color: white;
-        padding: 15px 30px;
-        text-decoration: none;
-        border-radius: 5px;
-        font-size: 1.2em;
-      }
-
       .features {
         display: flex;
         justify-content: space-around;
@@ -192,19 +156,25 @@
         text-decoration: underline;
       }
 
-th {
-  background-color: #04AA6D;
-  color: white;
-} 
- tr:nth-child(even) {background-color: #f2f2f2;} 
-  tr:hover {background-color: coral;} 
-   th, td {
-  border-bottom: 1px solid #ddd;
-}
-th, td {
-  padding: 15px;
-  text-align: left;
-}
+      th {
+        background-color: #04aa6d;
+        color: white;
+      }
+      tr:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+      tr:hover {
+        background-color: coral;
+      }
+      th,
+      td {
+        border-bottom: 1px solid #ddd;
+      }
+      th,
+      td {
+        padding: 15px;
+        text-align: left;
+      }
     </style>
   </head>
   <body>
@@ -213,17 +183,14 @@ th, td {
     </div>
 
     <div class="container">
-      <div class="hero">
-        <img src="/bg.jpg" alt="Hero Image" />
-        <h1>OLD is Forever</h1>
-        <p class="lead mt-3 mb-4">
-          Revive the Past, Customize Your Future – RetroZ: Where Classic Meets
-          Unique
-        </p>
-      </div>
-      <
-      {% block body %}{% endblock %}
-      
+      <h1>OLD is Forever</h1>
+      <p class="lead mt-3 mb-4">
+        Revive the Past, Customize Your Future – RetroZ: Where Classic Meets
+        Unique
+      </p>
+    </div>
+    {% block body %}{% endblock %}
+
     <div class="footer">
       <p>&copy; 2024 Retroz. All rights reserved.</p>
     </div>
