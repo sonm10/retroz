@@ -1,73 +1,79 @@
 <!DOCTYPE html>
+{% extends 'main.html' %}
 <html lang="en">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 20px;
-    }
-
-    h1 {
-      color: #333;
-    }
-
-    form {
-      width: 300px;
-      margin: 0 auto;
-    }
-
-    label {
-      display: block;
-      margin-top: 10px;
-      font-weight: bold;
-    }
-
-    input[type="text"] {
-      width: 100%;
-      padding: 8px;
-      margin-top: 5px;
-      box-sizing: border-box;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-    }
-
-    input[type="submit"] {
-      width: 100%;
-      padding: 10px;
-      margin-top: 20px;
-      background-color: #4caf50;
-      border: none;
-      border-radius: 4px;
-      color: white;
-      font-size: 16px;
-      cursor: pointer;
-    }
-
-    input[type="submit"]:hover {
-      background-color: #45a049;
-    }
-
-    a {
-      display: block;
-      text-align: center;
-      margin-top: 20px;
-      color: #333;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-  </style>
   <head>
     <meta charset="UTF-8" />
     <title>Create Record</title>
+    <h1>OLD is Forever</h1>
+    <p class="lead mt-3 mb-4">
+      Revive the Past, Customize Your Future – RetroZ: Where Classic Meets
+      Unique
+    </p>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+
+      h1 {
+        color: #333;
+      }
+
+      form {
+        width: 300px;
+        margin: 0 auto;
+      }
+
+      label {
+        display: block;
+        margin-top: 10px;
+        font-weight: bold;
+      }
+
+      input[type="text"] {
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+
+      input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        margin-top: 20px;
+        background-color: #4caf50;
+        border: none;
+        border-radius: 4px;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+
+      a {
+        display: block;
+        text-align: center;
+        margin-top: 20px;
+        color: #333;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+    </style>
   </head>
   <body>
     <h1>Create a new record</h1>
     <form action="/create" method="post">
       <label for="username">Username:</label>
       <input type="text" id="username" name="username" required /><br />
-      <label for="email ">Email:</label>
+      <label for="email">Email:</label>
       <input type="text" id="email" name="email" required /><br />
       <input type="submit" value="Create" />
     </form>

@@ -41,7 +41,7 @@ def create_record():
         email = request.form['email']
         connection = create_connection()
         cursor = connection.cursor()
-        query = "INSERT INTO users (user, email) VALUES (%s, %s)"
+        query = "INSERT INTO users (username, email) VALUES (%s, %s)"
         cursor.execute(query, (username, email))
         connection.commit()
         cursor.close()

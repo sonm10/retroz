@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+      }
+
+      .header {
+        background-color: #4caf50;
+        color: white;
+        padding: 20px 0;
+        text-align: center;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      .hero {
+        background-color: #ffffff;
+        padding: 50px 20px;
+        text-align: center;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+      }
+
+      .hero img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+        border-radius: 10px;
+      }
+
+      .hero h1 {
+        font-size: 3em;
+        margin-bottom: 10px;
+      }
+
+      .hero p {
+        font-size: 1.2em;
+        margin-bottom: 20px;
+      }
+
+      .hero a {
+        display: inline-block;
+        background-color: #4caf50;
+        color: white;
+        padding: 15px 30px;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 1.2em;
+      }
+
+      .features {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+      }
+
+      .feature {
+        background-color: #ffffff;
+        padding: 20px;
+        margin: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        width: calc(33% - 40px);
+        box-sizing: border-box;
+        text-align: center;
+      }
+
+      .feature h2 {
+        font-size: 2em;
+        margin-bottom: 10px;
+      }
+
+      .feature p {
+        font-size: 1em;
+      }
+
+      .footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+        margin-top: 20px;
+      }
+
+      @media (max-width: 768px) {
+        .features {
+          flex-direction: column;
+        }
+
+        .feature {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>RetrOZ</h1>
+    </div>
+
+    <div class="container">
+      <div class="hero">
+        <img src="bg.jpg" alt="Hero Image" />
+        <h1>OLD is Forever</h1>
+        <p class="lead mt-3 mb-4">
+          Revive the Past, Customize Your Future – RetroZ: Where Classic Meets
+          Unique
+        </p>
+      </div>
+
+      
+    <div class="footer">
+      <p>&copy; 2024 Retroz. All rights reserved.</p>
+    </div>
+  </body>
+</html>
