@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CRUD Application</title>
+  </head>
+  <body>
+    <h1>CRUD Application</h1>
+    <a href="/create">Create a new record</a>
+    <h2>Records:</h2>
+    <table border="1">
+      <tr>
+        <th>ID</th>
+        <th>Username</th>
+        <th>Email</th>
+        <th>Actions</th>
+      </tr>
+      {% for record in records %}
+      <tr>
+        <td>{{ record.id }}</td>
+        <td>{{ record.username }}</td>
+        <td>{{ record.email }}</td>
+        <td>
+          <a href="/update/{{ record.id }}">Update</a>
+          <a href="/delete/{{ record.id }}">Delete</a>
+        </td>
+      </tr>
+      {% endfor %}
+    </table>
+  </body>
+</html>
